@@ -8,7 +8,8 @@
     function JobCreateController($http, $state) {
         var vm = this;
         vm.job = {
-            description : null
+            description : null,
+            status: 0
         };
         vm.create = create;
 

@@ -1,0 +1,27 @@
+<div class="panel panel-default">
+    <div class="panel-heading">
+        Users ({{ vm.userCollection.count }})
+        <button class="btn btn-xs btn-primary" ui-sref="users.create({id: user.id})">Add New User</button>
+    </div>
+
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <th>#</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Actions</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="user in vm.userCollection.data">
+            <th scope="row">{{ user.id }}</th>
+            <td>{{ user.name }}</td>
+            <td>{{ user.email }}</td>
+            <td>
+                <button class="btn btn-xs btn-default" ui-sref="users.view({id: user.id})">View</button>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>

@@ -1,0 +1,20 @@
+<div class="panel panel-default">
+    <div class="panel-heading">User (#{{ vm.user.id }})</div>
+    <div class="panel-body">
+        <form ng-submit="vm.update()">
+            <dl class="dl-horizontal">
+                <dt><label for="name">Name</label></dt>
+                <dd><input type="text" class="form-control" id="name" ng-model="vm.user.name" placeholder="Full name"></dd>
+            </dl>
+
+            <dl class="dl-horizontal">
+                <dt><label for="email">Email</label></dt>
+                <dd><input type="email" class="form-control" id="email" ng-model="vm.user.email" placeholder="Email address"></dd>
+            </dl>
+
+            <dl>
+                <dt><button type="submit" class="btn btn-default">Update</button></dt>
+            </dl>
+        </form>
+    </div>
+</div>

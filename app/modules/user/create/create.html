@@ -1,0 +1,14 @@
+<div class="panel panel-default">
+    <div class="panel-heading">Create User</div>
+    <div class="panel-body">
+        <form ng-submit="vm.create()">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name" ng-model="vm.user.name" placeholder="Full name">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" ng-model="vm.user.email" placeholder="Email address">
+            </div>
+            <button type="submit" class="btn btn-default">Create</button>
+        </form>
+    </div>
+</div>
