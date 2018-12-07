@@ -27,7 +27,7 @@
                 {
                     description: vm.job.description,
                     status: vm.selectedStatus.id,
-                    assignee: vm.job.assignee !== null ? vm.job.assignee.id : null
+                    assignee: vm.job.assignee ? vm.job.assignee.id : null
                 }
             ).then(function (response) {
                 $state.go('jobs.list', {});
